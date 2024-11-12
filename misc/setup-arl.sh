@@ -3,7 +3,7 @@ set -e
 
 echo "更换阿里yum源"
 rm -f /etc/yum.repos.d/*
-mv centos8repos/* /etc/yum.repos.d/
+mv /opt/ARL/centos8repos/* /etc/yum.repos.d/
 yum clean all
 yum makecache
 
